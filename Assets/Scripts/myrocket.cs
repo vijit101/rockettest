@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class myrocket : MonoBehaviour {
     Rigidbody myrigidbd;
-    public float rocketspeed = 1;
+    //public float rocketspeed = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +16,7 @@ public class myrocket : MonoBehaviour {
         if (Input.GetKey(KeyCode.W))
         {
             
-            myrigidbd.AddRelativeForce(Vector3.up*rocketspeed, ForceMode.Force);
+            myrigidbd.AddRelativeForce(new Vector3(0,20,0), ForceMode.Force);
             Debug.Log("i am happy");
         }
 	}
